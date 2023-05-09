@@ -7,11 +7,16 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <ul>
-      <% messages.forEach(function(message) { %>
-        <li><%= message.user %> - <%= message.text %></li>
-      <% }); %>
-    </ul>
+    <div >
+      <ul class="feed">
+        <% messages.forEach(function(message) { %>
+          <li><div class="message-box">
+            <h2><%= message.user %> </h2>
+             <p><%= message.text %></p>
+          </div></li>
+        <% }); %>
+      </ul>
+    </div>
     
   </body>
 </html>
