@@ -42,4 +42,10 @@ header {
   padding: 20px 50px;
   border-radius: 5px;
   color: rgb(44, 44, 44);
+  max-width: 400px;
+}
+
+.comment {
+  margin-top: 1rem;
+  color: grey;
 }
