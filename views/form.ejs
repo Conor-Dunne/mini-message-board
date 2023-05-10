@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title><%= title %></title>
+    <title>
+        <%= title %>
+    </title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
+
 <body>
+    <header>
+        <h1><%= title %></h1>
+      </header>  
     <div class="container">
         <form method="post" action="/new">
             <label for="name">
                 Name:
-                <input type="text" id="name" name="name" required>
             </label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="comment">
+                Comment:
+            </label>
+            <input type="text" id="comment" name="comment" required></textarea>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
+
 </html>
