@@ -10,10 +10,15 @@
     <p>Welcome to <%= title %></p>
     </header>
     <div >
+      
       <ul class="feed">
+        <button>
+          <a href="/new" rel="noopener noreferrer">Add Message</a>
+        </button>
         <% messages.forEach(function(message) { %>
           <li><div class="message-box">
             <h2><%= message.user %> </h2>
+            <p><%=message.added %></p>
              <p class="comment"><%= message.text %></p>
           </div></li>
         <% }); %>
